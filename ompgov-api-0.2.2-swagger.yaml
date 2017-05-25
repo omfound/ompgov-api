@@ -23,7 +23,7 @@ tags:
 schemes:
   - https
 paths:
-  /sessions:
+  '/sessions':
     get:
       tags:
         - session
@@ -100,7 +100,7 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Session not found
-  /sites:
+  '/sites':
     get:
       tags:
         - site
@@ -250,7 +250,7 @@ paths:
           description: Invalid site ID supplied
         '404':
           description: Site not found
-  /categories:
+  '/categories':
     get:
       tags:
         - category
