@@ -210,6 +210,46 @@ paths:
           description: Invalid site ID supplied
         '404':
           description: Site not found
+  '/site/{siteId}/categories':
+    get:
+      tags:
+        - site
+      summary: List categories by site
+      description: Returns a listing of categories defined by this site, paging supported
+      produces:
+        - application/json
+      parameters:
+        - name: siteId
+          in: path
+          description: Unique site id
+          required: true
+          type: integer
+        - name: livestream
+          in: query
+          description: Limit results to categories used for live streaming
+          required: false
+          type: boolean
+        - name: start
+          in: query
+          description: Offset results by number specified
+          required: false
+          type: integer
+          format: int32
+        - name: limit
+          in: query
+          description: Limit results returned, maximum 500
+          required: false
+          type: integer
+          format: int32
+      responses:
+        '200':
+          description: successful operation
+          schema:
+            $ref: '#/definitions/Category'
+        '400':
+          description: Invalid site ID supplied
+        '404':
+          description: Site not found
 definitions:
   Session:
     type: object
