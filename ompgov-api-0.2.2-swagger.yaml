@@ -57,14 +57,14 @@ paths:
           in: query
           description: Offset results by number specified
           required: false
-          default: 0
+          default: "0"
           type: integer
           format: int32
         - name: limit
           in: query
           description: Limit results returned, maximum 500
           required: false
-          default: 100
+          default: "100"
           type: integer
           format: int32
       responses:
