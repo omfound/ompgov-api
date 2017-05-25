@@ -418,6 +418,7 @@ paths:
 definitions:
   Session:
     type: object
+    description: A meeting containing video, documents, captions and cuepoints.
     properties:
       id:
         type: integer
@@ -456,6 +457,7 @@ definitions:
         type: boolean
   Caption:
     type: object
+    description: Session captions transcribed from video. Depending on the site it may be automatic transcriptions or human.
     properties:
       id:
         type: integer
@@ -485,6 +487,7 @@ definitions:
         type: boolean
   Category:
     type: object
+    description: Category defined by a site to organize sessions. Examples include City Council, Planning Committee, Board of Commissioners, etc.
     properties:
       id:
         type: integer
@@ -501,6 +504,7 @@ definitions:
         type: boolean
   Document:
     type: object
+    description: A file attached to a session. Could be a meeting agenda, minutes, or other documentation.
     properties:
       id:
         type: integer
@@ -529,6 +533,7 @@ definitions:
         format: int32
   Site:
     type: object
+    description: OMP instance, could be a city council, school board, state legislature, etc
     properties:
       site_id:
         type: integer
