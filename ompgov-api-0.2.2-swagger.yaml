@@ -28,7 +28,7 @@ paths:
       tags:
         - session
       summary: Fetches sessions
-      description: Pull all government meeting sessions, paging supported
+      description: List all government meeting sessions, paging supported
       produces:
         - application/json
       parameters:
@@ -57,12 +57,14 @@ paths:
           in: query
           description: Offset results by number specified
           required: false
+          default: 0
           type: integer
           format: int32
         - name: limit
           in: query
           description: Limit results returned, maximum 500
           required: false
+          default: 100
           type: integer
           format: int32
       responses:
