@@ -523,3 +523,24 @@ definitions:
         type: string
       state_abbrev:
         type: string
+  Cuepoint:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      user_id:
+        type: integer
+        format: int64
+      session_id:
+        type: integer
+        format: int64
+      label:
+        type: string
+      title:
+        type: string
+      body:
+        type: string
+      seconds_start:
+        type: integer
+        format: int64
