@@ -590,6 +590,7 @@ definitions:
         type: string
   Cuepoint:
     type: object
+    description: Agenda item that has been timestamped against a session video
     properties:
       id:
         type: integer
