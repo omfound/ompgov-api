@@ -104,11 +104,16 @@ paths:
     get:
       tags:
         - site
-      summary: Find sites by location
+      summary: List sites, optionally by location - requires an API key
       description: 'Returns sites optionally filtered by state, county or city, paging supported'
       produces:
         - application/json
       parameters:
+        - name: key
+          in: query
+          description: API key that can be requested by contacting support@open.media
+          required: true
+          type: string
         - name: state
           in: query
           description: State can either be full state name or official abbreviation
