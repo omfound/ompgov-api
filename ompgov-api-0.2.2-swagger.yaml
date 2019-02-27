@@ -480,6 +480,9 @@ definitions:
       user_id:
         type: integer
         format: int64
+      site_id:
+        type: integer
+        format: int64
       session_id:
         type: integer
         format: int64
