@@ -1,10 +1,10 @@
 swagger: '2.0'
 info:
   description: >-
-    OMP BETA API documentation for accessing government meeting data (city councils, state legislature, school boards) using the Open Media Project (OMP). You can learn more about the
-    OMP at http://www.ompnetwork.org. Authentication is not currently required but an API key will be required in the future.
+    Open.Media API documentation for accessing government meeting data (city councils, state legislature, school boards). You can learn more about
+    Open.Media at http://open.media. Authentication is not currently required but an API key will be necessary for some endpoints as specified.
   version: "0.2.2"
-  title: Open Media Project
+  title: Open.Media
   contact:
     email: brian@openmediafoundation.org
 host: open.ompnetwork.org
