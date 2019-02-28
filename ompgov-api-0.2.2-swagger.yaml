@@ -6,7 +6,7 @@ info:
   version: "0.2.2"
   title: Open.Media
   contact:
-    email: brian@openmediafoundation.org
+    email: brian@open.media
 host: open.ompnetwork.org
 basePath: /api
 tags:
