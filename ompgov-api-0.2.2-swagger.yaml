@@ -106,7 +106,7 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Session not found
-    '/session/{sessionId}/captions':
+  '/session/{sessionId}/captions':
     get:
       tags:
         - session
@@ -130,7 +130,7 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Session not found
-    '/session/{sessionId}/cuepoints':
+  '/session/{sessionId}/cuepoints':
     get:
       tags:
         - session
