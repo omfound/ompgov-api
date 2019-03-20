@@ -110,8 +110,8 @@ paths:
     get:
       tags:
         - session
-      summary: Find captions by session ID
-      description: Returns all captions for provided session
+      summary: Find captions by ID
+      description: Returns all captions from the provided session
       produces:
         - application/json
       parameters:
@@ -134,8 +134,8 @@ paths:
     get:
       tags:
         - session
-      summary: Find cuepoints by session ID
-      description: Returns all cuepoints for provided session
+      summary: Find cuepoints by ID
+      description: Returns all cuepoints from the provided session
       produces:
         - application/json
       parameters:
